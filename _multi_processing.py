@@ -59,8 +59,8 @@ def baz():
 
 if __name__ == '__main__':
     child1 = Process(target=foo2).start()
-    child1 = Process(target=bar).start()
-    child1 = Process(target=baz).start()
+    child2 = Process(target=bar).start()
+    child3 = Process(target=baz).start()
 
 # This is foo
 # This is bar

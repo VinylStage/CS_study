@@ -5,3 +5,5 @@
 - [python으로 스레드 다루기](https://github.com/VinylStage/CS_study/blob/main/_thread.py)
 
 - [python의 method함수](https://github.com/VinylStage/CS_study/blob/main/method.py)
+
+- [python 비동기함수](https://github.com/VinylStage/CS_study/blob/main/Coroutine.py)

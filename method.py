@@ -95,37 +95,37 @@ empty_dict = {}
 my_dict = {"apple": 1, "banana": 2, "orange": 3}
 print(my_dict)
 
-# 2.딕셔너리 쌍 추가
+# 딕셔너리 쌍 추가
 my_dict["grape"] = 4
 print(my_dict)  # {"apple": 1, "banana": 2, "orange": 3, "grape": 4}
 
-# 3. del: 딕셔너리에서 특정 요소를 삭제
+# del: 딕셔너리에서 특정 요소를 삭제
 del my_dict["apple"]
 print(my_dict)  # {"banana": 2, "orange": 3, "grape": 4}
 
-# 4. 딕셔너리에서 특정 Key에 해당하는 Value를 얻는 방법(딕셔너리에 Key가 없는 경우, KeyError)
+# 딕셔너리에서 특정 Key에 해당하는 Value를 얻는 방법(딕셔너리에 Key가 없는 경우, KeyError)
 print(my_dict["banana"])  # 2
 
-# 5. keys: 딕셔너리에서 모든 Key를 리스트로 만들기
+# keys 딕셔너리에서 모든 Key를 리스트로 만들기
 my_dict2 = {"apple": 1, "banana": 2, "orange": 3}
 key_list = list(my_dict2.keys())
 print(key_list)  # ["apple", "banana", "orange"]
 
-# 6. values : 딕셔너리에서 모든 Value를 리스트로 만들기
+# values 딕셔너리에서 모든 Value를 리스트로 만들기
 value_list = list(my_dict2.values())
 print(value_list)  # [1, 2, 3]
 
-# 7. items: 딕셔너리의 모든 키와 값을 튜플 형태의 리스트로 반환
+# items 딕셔너리의 모든 키와 값을 튜플 형태의 리스트로 반환
 person = {'name': 'John', 'age': 30, 'gender': 'male'}
 items = person.items()
 print(items)  # dict_items([('name', 'John'), ('age', 30), ('gender', 'male')])
 
-# 8. clear: 딕셔너리의 모든 요소를 삭제
+# clear 딕셔너리의 모든 요소를 삭제
 person = {'name': 'John', 'age': 30, 'gender': 'male'}
 person.clear()
 print(person)  # {}
 
-# 9. get: 딕셔너리에서 지정한 키에 대응하는 값을 반환 (딕셔너리에 Key가 없는 경우, None 반환)
+# get 딕셔너리에서 지정한 키에 대응하는 값을 반환 (딕셔너리에 Key가 없는 경우, None 반환)
 person = {'name': 'John', 'age': 30, 'gender': 'male'}
 name = person.get('name')
 print(name)  # John
@@ -135,7 +135,7 @@ print(email)  # None
 email = person.get('email', 'unknown')
 print(email)  # unknown
 
-# 10. in: 해당키가 딕셔너리 안에 있는지 확인
+# 10. in 해당키가 딕셔너리 안에 있는지 확인
 person = {'name': 'John', 'age': 30, 'gender': 'male'}
 print('name' in person)  # True
 print('email' in person)  # False
